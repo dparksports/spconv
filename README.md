@@ -1,6 +1,13 @@
 # Fixes
 - Fixes "No CMAKE_CUDA_COMPILER could be found"
-- Include the following in .bashrc or .bash_profile.
+- Fixes No CUDNN_INCLUDE_DIR or CUDNN_LIBRARY
+
+```Bash
+export CUDNN_INCLUDE_DIR="/usr/local/cuda/include"
+export CUDNN_LIBRARY="/usr/local/cuda/lib64/libcudnn.so"
+```
+
+- My NUSCENES .bashrc file.
 
 ```Bash
 export CUDNN_INCLUDE_DIR="/usr/local/cuda/include"
