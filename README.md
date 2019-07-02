@@ -22,6 +22,32 @@ export NUMBAPRO_NVVM=/usr/local/cuda/nvvm/lib64/libnvvm.so
 export NUMBAPRO_LIBDEVICE=/usr/local/cuda/nvvm/libdevice
 ```
 
+# Instruction
+
+```Bash
+sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
+tar -xf Downloads/Python-3.7.3.tar.xz
+./configure --enable-optimizations
+make -j 12 && sudo make altinstall
+md5sum Downloads/Miniconda3-latest-Linux-x86_64.sh 
+conda create -n pointpillars python=3.7 anaconda
+   43  conda activate pointpillars
+   44  conda install shapely pybind11 protobuf scikit-image numba pillow
+   45  conda install pytorch torchvision -c pytorch
+   46  conda install google-sparsehash -c bioconda
+   47  pip install --upgrade pip
+   48  pip install fire tensorboardX
+   52  git clone https://github.com/facebookresearch/SparseConvNet.git
+      58  conda install scikit-image scipy numba pillow matplotlib
+         61  tar -xf Downloads/cmake-3.14.5.tar.gz 
+            65  ./bootstrap 
+   66  make -j 12
+   67  sudo make install
+   68  cmake --version
+
+```
+
+
 # Additional Reference
 - https://github.com/facebookresearch/SparseConvNet
 
