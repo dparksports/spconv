@@ -1,5 +1,20 @@
 # Fixes
 - Fixes "No CMAKE_CUDA_COMPILER could be found"
+- Include the following in .bashrc or .bash_profile.
+
+```Bash
+export CUDNN_INCLUDE_DIR="/usr/local/cuda/include"
+export CUDNN_LIBRARY="/usr/local/cuda/lib64/libcudnn.so"
+
+export NUSCENES="/data/sets/nuscenes"
+
+export PYTHONPATH="${PYTHONPATH}:$HOME/second.pytorch"
+
+export NUMBAPRO_CUDA_DRIVER=/usr/lib/x86_64-linux-gnu/libcuda.so
+export NUMBAPRO_NVVM=/usr/local/cuda/nvvm/lib64/libnvvm.so
+export NUMBAPRO_LIBDEVICE=/usr/local/cuda/nvvm/libdevice
+```
+
 
 
 # SpConv: PyTorch Spatially Sparse Convolution Library
