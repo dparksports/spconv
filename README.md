@@ -15,6 +15,8 @@ export NUMBAPRO_NVVM=/usr/local/cuda/nvvm/lib64/libnvvm.so
 export NUMBAPRO_LIBDEVICE=/usr/local/cuda/nvvm/libdevice
 ```
 
+# Additional Reference
+- https://github.com/facebookresearch/SparseConvNet
 
 
 # SpConv: PyTorch Spatially Sparse Convolution Library
